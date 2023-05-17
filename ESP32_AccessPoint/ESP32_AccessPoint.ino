@@ -9,9 +9,9 @@ void setup()
 {
   // put your setup code here, to run once:
   Serial.begin(9600);
-  WiFi.softAP("ESP32", "123456789");
+  WiFi.softAP("hotspot name", "password");
   Serial.println();
-  Serial.println("NodeMCU Started!");
+  Serial.println("ESP32 Started!");
   Serial.println(WiFi.softAPIP());
   server.begin();
   pinMode(led, OUTPUT);
