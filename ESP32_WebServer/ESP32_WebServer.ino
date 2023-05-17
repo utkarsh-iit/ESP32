@@ -8,7 +8,7 @@ WiFiServer server(80);      // server is a variable and 80 is the port no at whi
 void setup() 
 {
   Serial.begin(9600);
-  WiFi.begin("TRY-ESP", "12345678");
+  WiFi.begin("ssid", "password");
   while(WiFi.status() != WL_CONNECTED)
   {
     delay(200);
